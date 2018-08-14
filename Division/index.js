@@ -8,7 +8,7 @@ module.exports = function (context, req) {
         let status = 200;
         let body;
         if (!isNaN(op1) && !isNaN(op2)) {
-            if (op2 !== 0) {
+            if (op2 != 0) {
                 body = `Result: ${op1 / op2}`;
             } else {
                 status = 409;
